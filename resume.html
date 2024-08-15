@@ -1,50 +1,293 @@
 <!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-	<head>
-		<title>Keval's Resume</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
 
-	</head>
-	<body class="is-preload">
+<head>
+	<title>Keval Sakhiya : Data Scientist</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		/* Center the container and apply default styling */
+		.resume-container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #ffffff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+		}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		/* Adjust header alignment and spacing */
+		.resume-header {
+			text-align: center;
+			margin-bottom: 20px;
+		}
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<!-- Header -->
-								<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Keval's Portfolio</strong></a>
-									<ul class="icons">
-										<li><a href="index.html">About Me</a></li>
-										<li><a href="resume.html">Resume</a></li>
-										<li><a href="projects.html">Projects</a></li>
-										<li><a href="contact_me.html">Contact Me</a></li>
-									</ul>
-								</header>
-								
-							<!-- Content -->
-								<section>
-									<img src="D:\Portfolio-website\images\keval_resume.jpg" width="70%">
-										<a class="button primary large" href="D:\Portfolio-website\Keval Resume.pdf" target="_blank" download="D:\Portfolio-website\Keval Resume.pdf">Download Resume</a>
-									</section>
+		/* Default styles for headers */
+		.resume-header h1 {
+			font-size: 2em;
+			margin-bottom: 10px;
+			color: #3d4449;
+		}
 
-						</div>
+		.resume-header p {
+			margin-bottom: 10px;
+			font-size: 1em;
+		}
+
+		/* Section headers */
+		.resume-section h2 {
+			font-size: 1.5em;
+			margin-bottom: 10px;
+			color: #3d4449;
+			border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+			padding-bottom: 5px;
+		}
+
+		/* Bullet points */
+		.resume-section ul {
+			list-style-type: disc;
+			padding-left: 20px;
+			color: #7f888f;
+		}
+
+		.resume-section ul li {
+			margin-bottom: 10px;
+		}
+
+		/* Download button styling */
+		.download-btn {
+			display: inline-block;
+			padding: 10px 20px;
+			margin-top: 20px;
+			background-color: #f56a6a;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+
+		.download-btn:hover {
+			background-color: #cccccc;
+		}
+
+		/* Ensure consistency with website's typography */
+		body,
+		input,
+		select,
+		textarea {
+			color: #7f888f;
+			font-family: "Open Sans", sans-serif;
+			font-size: 13pt;
+			font-weight: 400;
+			line-height: 1.65;
+		}
+		
+	</style>
+	<!-- <script src="https://kit.fontawesome.com/0a9b84e7ff.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="" class="logo"><strong>Resume</strong></a>
+					<ul class="icons">
+						<li><a href="https://github.com/kevalsakhiya" target="blank" class="icon brands fa-github"><span
+									class="label">Githib</span></a></li>
+						<li><a href="https://www.linkedin.com/in/kevalsakhiya" target="blank"
+								class="icon brands fa fa-linkedin"><span class="label">Linkdin</span></a></li>
+						<li><a href="https://medium.com/@kevalsakhiya" target="blank" alt="medium"
+								class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+					</ul>
+					
+				</header>
+				
+				<!-- Resume -->
+				<div class="resume-container">
+					<a href="/home/keval/Downloads/keval-resume.pdf" target="blank" download="keval-resume.pdf"><strong>Download Resume</strong></a>
+					<header class="resume-header">
+						
+						<h1>Keval Sakhiya</h1>
+						<p style="text-align:center; font-size:12px;">
+							+91-9687591750 |
+							<a href="mailto:kevalsakhiya@gmail.com" target="blank">Personal Email</a> |
+							<a href="https://mywebsite.com" target="blank">Personal Website</a>
+						</p>
+						<p style="text-align:center; font-size:12px;">
+							<a href="https://www.linkedin.com/in/kevalsakhiya" target="blank">Linkdin Profile</a> |
+							<a href="https://github.com/kevalsakhiya" target="blank">Github Profile</a> |
+							<a href="https://www.upwork.com/freelancers/~0176630a8fa2c90848" target="blank">Upwork
+								Profile</a>
+						</p>
+					</header>
+
+					<section class="resume-section">
+						<h2>Skills</h2>
+						<ul>
+							<li><strong>Programming Languages:</strong> Python, SQL, JavaScript</li>
+							<li><strong>Data Science:</strong> Machine Learning, Deep Learning, Natural Language
+								Processing (NLP), Data Analysis</li>
+							<li><strong>Frameworks & Tools:</strong> TensorFlow, Keras, Scikit-learn, XGBoost, Power BI
+							</li>
+							<li><strong>Databases:</strong> SQL, NoSQL</li>
+							<li><strong>Data Collection & Web Scraping:</strong> Scrapy, Requests, Selenium</li>
+							<li><strong>Data Engineering:</strong> ETL, Data Pipelines, Data Warehousing</li>
+							<li><strong>Cloud Platforms:</strong> AWS (EC2, S3), Azure, Google Cloud Platform (GCP)</li>
+							<li><strong>Version Control & Collaboration:</strong> Git, Docker</li>
+							<li><strong>Other Tools:</strong> MLflow, DVC, FastAPI, Django</li>
+						</ul>
+					</section>
+
+					<section class="resume-section">
+						<h2>Work Experience</h2>
+
+						<h3>Freelancer | Upwork</h3>
+						<h4>Data Engineer | 2019 - 2023 (4 years)</h4>
+						<ul>
+							<li>Worked on numerous data gathering and web scraping projects, efficiently collecting and
+								processing large datasets.</li>
+							<li>Developed robust data pipelines to clean, transform, and store data in both SQL and
+								NoSQL databases.</li>
+							<li>Automated pipeline execution and scheduling for web scraping spiders, ensuring timely
+								and accurate data retrieval.</li>
+							<li>Collaborated with clients to design scalable solutions, utilizing cloud platforms such
+								as AWS EC2 and S3.</li>
+							<li>Tools used: Scrapy, Requests, Selenium, Git, Docker, SQL, NoSQL databases.</li>
+						</ul>
+
+						<h4>Data Scientist | 2022 - Present (2 years)</h4>
+						<ul>
+							<li>Designed and implemented machine learning and deep learning models for diverse projects,
+								delivering actionable insights and predictions.</li>
+							<li>Applied MLOps best practices by integrating data version control and Git, ensuring the
+								reproducibility and scalability of models.</li>
+							<li>Implemented experiment tracking using MLflow and set up CI/CD pipelines with Git Actions
+								to streamline model deployment.</li>
+							<li>Tools used: Scikit-learn, TensorFlow, Keras, XGBoost, Matplotlib, Fast API, Power BI.
+							</li>
+						</ul>
+					</section>
+
+					<section class="resume-section">
+						<h2>Projects</h2>
+
+						<h3>Emotion Detection Using CNN</h3>
+						<p><strong>GitHub:</strong> <a
+								href="https://github.com/kevalsakhiya/emotion-detection-using-cnn" target="blank">Emotion Detection
+								Using CNN</a></p>
+						<p>Developed a deep learning model using a Convolutional Neural Network (CNN) based on the
+							ResNet architecture to detect and classify human emotions from images. Achieved high
+							accuracy through extensive data preprocessing and model tuning. Created a user interface
+							with Gradio App for easy interaction and implemented an OpenCV-based app for real-time
+							emotion detection via live video.</p>
+
+						<h3>Property Scout - Real Estate Price Prediction</h3>
+						<p><strong>GitHub:</strong> <a href="https://github.com/kevalsakhiya/property-scout" target="blank">Property
+								Scout</a></p>
+						<p>Created a comprehensive real estate property price prediction system using XGBoost. The
+							project includes a property recommendation system leveraging cosine similarity for location,
+							facilities, and price, with a focus on MLOps practices including data version control and
+							experiment tracking. This project helps potential homebuyers and real estate investors make
+							informed decisions by accurately predicting property prices and suggesting optimal
+							properties based on personalized preferences.</p>
+
+						<h3>Movie Recommender System</h3>
+						<p><strong>GitHub:</strong> <a
+								href="https://github.com/kevalsakhiya/movie-recommender-system" target="blank">Movie Recommender
+								System</a></p>
+						<p>Implemented a content-based movie recommender system that suggests movies to users based on
+							their preferences. Utilized natural language processing (NLP) techniques to analyze movie
+							metadata and calculate similarities using cosine distance, providing personalized
+							recommendations.</p>
+					</section>
+
+					<section class="resume-section">
+						<h2>Interests</h2>
+						<ul>
+							<li><strong>Blog Writing:</strong> Write and share data science insights on Medium,
+								simplifying complex topics for a broad audience.</li>
+							<li><strong>AI Exploration:</strong> Learn and experiment with new AI technologies,
+								including AI agents and APIs.</li>
+							<li><strong>Reading:</strong> Enjoy reading novels and books on technology, AI, and data
+								science.</li>
+						</ul>
+					</section>
+
+					<div style="text-align:center;">
+						<!-- Download Button -->
+						<hr>
+							<a href="/home/keval/Downloads/keval-resume.pdf" target="blank"
+							download="keval-resume.pdf" class="download-btn">Download Resume</a>
+						<br><br>
 					</div>
+				</div>
 
 			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
 
-	</body>
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="articles.html">Blogs</a></li>
+						<li><a href="contact_me.html">Contact Me</a></li>
+					</ul>
+				</nav>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<p>
+						Thank you for stopping by! Your interest means a lot, and I'd love to discuss how we can work
+						together.
+						<br>
+						Feel free to reach out, I'm just a message away.
+					</p>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a
+								href="mailto:kevalsakhiya@gmail.com">kevalsakhiya@gmail.com</a></li>
+						<li class="icon brands fa fa-linkedin"><a href="https://www.linkedin.com/in/kevalsakhiya"
+								target="blank">Keval Sakhiya</a></li>
+						<li class="icon solid fa-phone">+91 9687591750</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
