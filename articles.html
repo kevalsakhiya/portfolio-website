@@ -1,188 +1,221 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Blogs - Keval Sakhiya</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Blogs - Keval Sakhiya</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Custom CSS for responsive blog layout */
+        .posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        .posts article {
+            flex: 0 0 25%; /* 3 items per row on large screens */
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        .posts article img {
+            width: 100%;
+            height: auto;
+        }
 
-							<!-- Header -->
-								<header id="header">
-									<a href="" class="logo"><strong>Blogs</strong></a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
-								</header>
+        /* Media queries for responsiveness */
+        @media (max-width: 1024px) {
+            .posts article {
+                flex: 0 0 48%; /* 2 items per row on medium screens */
+            }
+        }
 
-							<!-- Content -->
-                            <section>
-                                
-                                <section>
-                                    <div class="posts">
-                                        
+        @media (max-width: 768px) {
+            .posts article {
+                flex: 0 0 100%; /* 1 item per row on small screens */
+            }
+        }
 
-                                        <article>
-                                            <a href="https://medium.com/thedeephub/understanding-classification-metrics-part-1-bcfa2fc98416" target="blank" class="image"><img src="images/articles/cm1.png" alt="" /></a>
-                                            <h3>Understanding Classification Metrics: Part 1</h3>
-                                            <p>
-                                                This blog post introduces the essential metrics for evaluating classification models, including accuracy and confusion matrix, with practical examples to illustrate their importance.
-                                            </p>
-                                            <ul class="actions">
-                                                <li><a href="https://medium.com/thedeephub/understanding-classification-metrics-part-1-bcfa2fc98416" target="blank" class="button">More</a></li>
-                                            </ul>
-                                        </article>
-                                        
-                                        <article>
-                                            <a href="https://medium.com/thedeephub/understanding-classification-metrics-part-2-33611b15104e" target="blank" class="image"><img src="images/articles/cm2.png" alt="" /></a>
-                                            <h3>Understanding Classification Metrics: Part 2</h3>
-                                            <p>
-                                                In this second part of the series, I provide a detailed analysis of evaluation metrics for classification models, covering precision, recall, and F1-score to help improve machine-learning models.
-                                            </p>
-                                            <ul class="actions">
-                                                <li><a href="https://medium.com/thedeephub/understanding-classification-metrics-part-2-33611b15104e" target="blank" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+        .posts article h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
 
-                                        <article>
-                                            <a href="https://medium.com/thedeephub/understanding-classification-metrics-part-3-8f455118617d" target="blank" class="image"><img src="images/articles/cm3.png" alt="" /></a>
-                                            <h3>Understanding Classification Metrics: Part 3</h3>
-                                            <p>
-                                                In my final series on classification metrics, I cover advanced evaluation metrics such as ROC-AUC, precision-recall curves, and specificity metrics. this post offers practical insights for evaluating model performance.
-                                            </p>
-                                            <ul class="actions">
-                                                <li><a href="https://medium.com/thedeephub/understanding-classification-metrics-part-3-8f455118617d" target="blank" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+        .posts article p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
 
-                                        <article>
-                                            <a href="https://medium.com/thedeephub/what-is-perceptron-4883c3695a3f" target="blank" class="image"><img src="images/articles/perceptron.png" alt="" /></a>
-                                            <h3>What is Perceptron</h3>
-                                            <p>
-                                                In this blog post, I explore the basics of the Perceptron, a foundational component of neural networks. I discuss how it works, its mathematical formulation, and its role in machine learning and foundation of Neural Networks.
-                                            </p>
-                                            <ul class="actions">
-                                                <li><a href="https://medium.com/thedeephub/what-is-perceptron-4883c3695a3f" target="blank" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+        .posts article .actions .button {
+            padding: 10px 15px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-                                        <article>
-                                            <a href="https://medium.com/@kevalsakhiya/handling-missing-data-a-detailed-answer-on-how-to-handle-missing-data-part-1-2ee70bb51941" target="blank" class="image"><img src="images/articles/md1.png" alt="" /></a>
-                                            <h3>Handling Missing Data: A Detailed Guide (Part 1)</h3>
-                                            <p>
-                                                In this series, I cover the significance of addressing missing data, types of missing data, and initial strategies to manage them, providing a solid foundation for data preprocessing.
-                                            </p>
-                                            <ul class="actions">
-                                                <li><a href="https://medium.com/@kevalsakhiya/handling-missing-data-a-detailed-answer-on-how-to-handle-missing-data-part-1-2ee70bb51941" target="blank" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-                                        <article>
-                                            <a href="https://medium.com/@kevalsakhiya/handling-missing-data-a-detailed-answer-on-how-to-handle-missing-data-part-2-10906de6beed" target="blank" class="image"><img src="images/articles/md2.png" alt="" /></a>
-                                            <h3>Handling Missing Data: A Detailed Guide (Part 2)</h3>
-                                            <p>
-                                                In this blog post, I discuss advanced techniques for handling missing data in datasets, including imputation methods and practical strategies for different data types that can improve data preprocessing skills.
-                                            </p>
-                                            <ul class="actions">
-                                                <li><a href="https://medium.com/@kevalsakhiya/handling-missing-data-a-detailed-answer-on-how-to-handle-missing-data-part-2-10906de6beed" target="blank" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
 
-                                        
+                <!-- Header -->
+                <header id="header">
+                    <a href="" class="logo"><strong>Blogs</strong></a>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
 
-                                        <article>
-                                            <a href="https://medium.com/@kevalsakhiya/best-practices-for-data-cleaning-polishing-data-for-optimal-results-6bdc17f0d888" target="blank" class="image"><img src="images/articles/mv.png" alt="" /></a>
-                                            <h3>Best Practices for Data Cleaning: Polishing Data for Optimal Results</h3>
-                                            <p>
-                                                In this blog post, I outline essential best practices for data cleaning, covering techniques to identify and correct errors, remove inconsistencies, and prepare datasets for accurate analysis and modeling.
-                                            </p>
-                                            <ul class="actions">
-                                                <li><a href="https://medium.com/@kevalsakhiya/best-practices-for-data-cleaning-polishing-data-for-optimal-results-6bdc17f0d888" target="blank" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+                <!-- Content -->
+                <section>
+                    <div class="posts">
+                        <article>
+                            <a href="https://medium.com/thedeephub/understanding-classification-metrics-part-1-bcfa2fc98416" target="blank" class="image"><img src="images/articles/cm1.png" alt="Understanding Classification Metrics: Part 1" /></a>
+                            <h3>Understanding Classification Metrics: Part 1</h3>
+                            <p>
+                                This blog post introduces the essential metrics for evaluating classification models, including accuracy and confusion matrix, with practical examples to illustrate their importance.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://medium.com/thedeephub/understanding-classification-metrics-part-1-bcfa2fc98416" target="blank" class="button">More</a></li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <a href="https://medium.com/thedeephub/understanding-classification-metrics-part-2-33611b15104e" target="blank" class="image"><img src="images/articles/cm2.png" alt="Understanding Classification Metrics: Part 2" /></a>
+                            <h3>Understanding Classification Metrics: Part 2</h3>
+                            <p>
+                                In this second part of the series, I provide a detailed analysis of evaluation metrics for classification models, covering precision, recall, and F1-score to help improve machine-learning models.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://medium.com/thedeephub/understanding-classification-metrics-part-2-33611b15104e" target="blank" class="button">More</a></li>
+                            </ul>
+                        </article>
 
-                                        <article>
-                                            <a href="https://medium.com/@kevalsakhiya/hands-on-data-cleaning-using-pandas-transforming-phone-data-for-analysis-c43796e07cce" target="blank" class="image"><img src="images/articles/ohd.png" alt="" /></a>
-                                            <h3>Hands-On Data Cleaning Using Pandas: Transforming Phone Data for Analysis</h3>
-                                            <p>
-                                                In this practical guide, I demonstrate how to use Pandas for data cleaning, focusing on transforming phone data. using best practices data wrangling with Pandas.
-                                            </p>
-                                            <ul class="actions">
-                                                <li><a href="https://medium.com/@kevalsakhiya/hands-on-data-cleaning-using-pandas-transforming-phone-data-for-analysis-c43796e07cce" target="blank" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+                        <article>
+                            <a href="https://medium.com/thedeephub/understanding-classification-metrics-part-3-8f455118617d" target="blank" class="image"><img src="images/articles/cm3.png" alt="Understanding Classification Metrics: Part 3" /></a>
+                            <h3>Understanding Classification Metrics: Part 3</h3>
+                            <p>
+                                In my final series on classification metrics, I cover advanced evaluation metrics such as ROC-AUC, precision-recall curves, and specificity metrics. this post offers practical insights for evaluating model performance.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://medium.com/thedeephub/understanding-classification-metrics-part-3-8f455118617d" target="blank" class="button">More</a></li>
+                            </ul>
+                        </article>
 
-                                        
-                                    </div>
-                                </section>
-                                
-                            </section>
+                        <article>
+                            <a href="https://medium.com/thedeephub/what-is-perceptron-4883c3695a3f" target="blank" class="image"><img src="images/articles/perceptron.png" alt="What is Perceptron" /></a>
+                            <h3>What is Perceptron</h3>
+                            <p>
+                                In this blog post, I explore the basics of the Perceptron, a foundational component of neural networks. I discuss how it works, its mathematical formulation, and its role in machine learning and foundation of Neural Networks.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://medium.com/thedeephub/what-is-perceptron-4883c3695a3f" target="blank" class="button">More</a></li>
+                            </ul>
+                        </article>
 
-						</div>
-					</div>
+                        <article>
+                            <a href="https://medium.com/@kevalsakhiya/handling-missing-data-a-detailed-answer-on-how-to-handle-missing-data-part-1-2ee70bb51941" target="blank" class="image"><img src="images/articles/md1.png" alt="Handling Missing Data: A Detailed Guide (Part 1)" /></a>
+                            <h3>Handling Missing Data: A Detailed Guide (Part 1)</h3>
+                            <p>
+                                In this series, I cover the significance of addressing missing data, types of missing data, and initial strategies to manage them, providing a solid foundation for data preprocessing.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://medium.com/@kevalsakhiya/handling-missing-data-a-detailed-answer-on-how-to-handle-missing-data-part-1-2ee70bb51941" target="blank" class="button">More</a></li>
+                            </ul>
+                        </article>
 
-				<!-- Sidebar -->
-				<div id="sidebar">
-					<div class="inner">
+                        <article>
+                            <a href="https://medium.com/@kevalsakhiya/handling-missing-data-a-detailed-answer-on-how-to-handle-missing-data-part-2-10906de6beed" target="blank" class="image"><img src="images/articles/md2.png" alt="Handling Missing Data: A Detailed Guide (Part 2)" /></a>
+                            <h3>Handling Missing Data: A Detailed Guide (Part 2)</h3>
+                            <p>
+                                In this blog post, I discuss advanced techniques for handling missing data in datasets, including imputation methods and practical strategies for different data types that can improve data preprocessing skills.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://medium.com/@kevalsakhiya/handling-missing-data-a-detailed-answer-on-how-to-handle-missing-data-part-2-10906de6beed" target="blank" class="button">More</a></li>
+                            </ul>
+                        </article>
 
-						<!-- Menu -->
-							<nav id="menu">
-								<header class="major">
-									<h2>Menu</h2>
-								</header>
-								<ul>
-									<li><a href="index.html">Homepage</a></li>
-									<li><a href="resume.html">Resume</a></li>
-									<li><a href="projects.html">Projects</a></li>
-									<li><a href="articles.html">Blogs</a></li>
-									<li><a href="contact_me.html">Contact Me</a></li>
-								</ul>
-							</nav>
+                        <article>
+                            <a href="https://medium.com/@kevalsakhiya/best-practices-for-data-cleaning-polishing-data-for-optimal-results-6bdc17f0d888" target="blank" class="image"><img src="images/articles/mv.png" alt="Best Practices for Data Cleaning: Polishing Data for Optimal Results" /></a>
+                            <h3>Best Practices for Data Cleaning: Polishing Data for Optimal Results</h3>
+                            <p>
+                                In this blog post, I outline essential best practices for data cleaning, covering techniques to identify and correct errors, remove inconsistencies, and prepare datasets for accurate analysis and modeling.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://medium.com/@kevalsakhiya/best-practices-for-data-cleaning-polishing-data-for-optimal-results-6bdc17f0d888" target="blank" class="button">More</a></li>
+                            </ul>
+                        </article>
 
-						<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Get in touch</h2>
-								</header>
-								<p>
-									Thank you for stopping by! Your interest means a lot, and I'd love to discuss how we can work together.
-									<br>
-									Feel free to reach out, I'm just a message away.
-								</p>
-								<ul class="contact">
-									<li class="icon solid fa-envelope"><a href="mailto:kevalsakhiya@gmail.com">kevalsakhiya@gmail.com</a></li>
-									<li class="icon brands fa fa-linkedin" ><a href="https://www.linkedin.com/in/kevalsakhiya" target="blank">Keval Sakhiya</a></li>
-									<li class="icon solid fa-phone">+91 9687591750</li>
-								</ul>
-							</section>
-					</div>
-				</div>
+                        <article>
+                            <a href="https://medium.com/@kevalsakhiya/hands-on-data-cleaning-using-pandas-transforming-phone-data-for-analysis-c43796e07cce" target="blank" class="image"><img src="images/articles/ohd.png" alt="Hands-On Data Cleaning Using Pandas: Transforming Phone Data for Analysis" /></a>
+                            <h3>Hands-On Data Cleaning Using Pandas: Transforming Phone Data for Analysis</h3>
+                            <p>
+                                In this practical guide, I demonstrate how to use Pandas for data cleaning, focusing on transforming phone data. using best practices data wrangling with Pandas.
+                            </p>
+                            <ul class="actions">
+                                <li><a href="https://medium.com/@kevalsakhiya/hands-on-data-cleaning-using-pandas-transforming-phone-data-for-analysis-c43796e07cce" target="blank" class="button">More</a></li>
+                            </ul>
+                        </article>
 
-		</div>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
 
-	</body>
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="articles.html">Blogs</a></li>
+                        <li><a href="contact_me.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>
+                        Thank you for stopping by! Your interest means a lot, and I'd love to discuss how we can work together.
+                        <br>
+                        Feel free to reach out, I'm just a message away.
+                    </p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="mailto:kevalsakhiya@gmail.com">kevalsakhiya@gmail.com</a></li>
+                        <li class="icon brands fa fa-linkedin" ><a href="https://www.linkedin.com/in/kevalsakhiya" target="blank">Keval Sakhiya</a></li>
+                        <li class="icon solid fa-phone">+91 9687591750</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>

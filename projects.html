@@ -1,127 +1,167 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Projects - Keval Sakhiya</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Projects - Keval Sakhiya</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Custom CSS for responsive layout */
+        .posts .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        .posts .row > article {
+            flex: 0 0 25%; /* Ensures 3 items per row */
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        .posts .row img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-							<!-- Header -->
-								<header id="header">
-									<a href="" class="logo"><strong>Projects</strong></a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
-								</header>
+        /* Media queries for responsiveness */
+        @media (max-width: 1024px) {
+            .posts .row > article {
+                flex: 0 0 48%; /* 2 items per row on medium screens */
+            }
+        }
 
-							<!-- Content -->
-                            <section>
-                                
-                                <section>
-                                    <div class="posts box alt">
-										<div class="row gtr-50 gtr-uniform">
-											<article class="col-4">
-												<a href="#" class="image"><img src="images/projects/ed.png" alt="" /></a>
-												<h3>Emotion Detection using CNN</h3>
-												<p>
-													Developed a convolutional neural network (CNN) model to detect human emotions from facial expressions in images, leveraging deep learning techniques to achieve accurate emotion classification.
-												</p>
-												<ul class="actions">
-													<li><a href="#" class="button">More</a></li>
-												</ul>
-											</article>
-											<article class="col-4">
-												<a href="#" class="image"><img src="images/projects/mr.png" alt="" /></a>
-												<h3>Property Scout</h3>
-												<p>
-													Built a web application that aggregates and analyzes real estate data to help users find properties that match their criteria, utilizing web scraping, data processing, and a user-friendly interface.
-												</p>
-												<ul class="actions">
-													<li><a href="#" class="button">More</a></li>
-												</ul>
-											</article>
-											<article class="col-4">
-												<a href="#" class="image"><img src="images/projects/mr.png" alt="" /></a>
-												<h3>Movie Recommender System</h3>
-												<p>
-													Created a personalized movie recommendation system using collaborative filtering and content-based filtering techniques, enabling users to discover movies based on their preferences and viewing history.
-												</p>
-												<ul class="actions">
-													<li><a href="#" class="button">More</a></li>
-												</ul>
-											</article>
-										</div>
-                                    </div>
-                                </section>
-                                
-                            </section>
+        @media (max-width: 768px) {
+            .posts .row > article {
+                flex: 0 0 100%; /* 1 item per row on small screens */
+            }
+        }
 
-						</div>
-					</div>
+        .posts .row h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
 
-				<!-- Sidebar -->
-				<div id="sidebar">
-					<div class="inner">
+        .posts .row p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
 
-						<!-- Menu -->
-							<nav id="menu">
-								<header class="major">
-									<h2>Menu</h2>
-								</header>
-								<ul>
-									<li><a href="index.html">Homepage</a></li>
-									<li><a href="resume.html">Resume</a></li>
-									<li><a href="projects.html">Projects</a></li>
-									<li><a href="articles.html">Blogs</a></li>
-									<li><a href="contact_me.html">Contact Me</a></li>
-								</ul>
-							</nav>
+        .posts .row .actions .button {
+            padding: 10px 15px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-						<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Get in touch</h2>
-								</header>
-								<p>
-									Thank you for stopping by! Your interest means a lot, and I'd love to discuss how we can work together.
-									<br>
-									Feel free to reach out, I'm just a message away.
-								</p>
-								<ul class="contact">
-									<li class="icon solid fa-envelope"><a href="mailto:kevalsakhiya@gmail.com">kevalsakhiya@gmail.com</a></li>
-									<li class="icon brands fa fa-linkedin" ><a href="https://www.linkedin.com/in/kevalsakhiya" target="blank">Keval Sakhiya</a></li>
-									<li class="icon solid fa-phone">+91 9687591750</li>
-								</ul>
-							</section>
-					</div>
-				</div>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-		</div>
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <!-- Header -->
+                <header id="header">
+                    <a href="" class="logo"><strong>Projects</strong></a>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
 
-	</body>
+                <!-- Content -->
+                <section>
+                    <div class="posts">
+                        <div class="row">
+                            <article>
+                                <a href="#" class="image"><img src="images/projects/ed.png" alt="Emotion Detection using CNN" /></a>
+                                <h3>Emotion Detection using CNN</h3>
+                                <p>
+                                    Developed a convolutional neural network (CNN) model to detect human emotions from facial expressions in images, leveraging deep learning techniques to achieve accurate emotion classification.
+                                </p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button">More</a></li>
+                                </ul>
+                            </article>
+                            <article>
+                                <a href="#" class="image"><img src="images/projects/mr.png" alt="Property Scout" /></a>
+                                <h3>Property Scout</h3>
+                                <p>
+                                    Built a web application that aggregates and analyzes real estate data to help users find properties that match their criteria, utilizing web scraping, data processing, and a user-friendly interface.
+                                </p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button">More</a></li>
+                                </ul>
+                            </article>
+                            <article>
+                                <a href="#" class="image"><img src="images/projects/mr.png" alt="Movie Recommender System" /></a>
+                                <h3>Movie Recommender System</h3>
+                                <p>
+                                    Created a personalized movie recommendation system using collaborative filtering and content-based filtering techniques, enabling users to discover movies based on their preferences and viewing history.
+                                </p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button">More</a></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="articles.html">Blogs</a></li>
+                        <li><a href="contact_me.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>
+                        Thank you for stopping by! Your interest means a lot, and I'd love to discuss how we can work together.
+                        <br>
+                        Feel free to reach out, I'm just a message away.
+                    </p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="mailto:kevalsakhiya@gmail.com">kevalsakhiya@gmail.com</a></li>
+                        <li class="icon brands fa fa-linkedin"><a href="https://www.linkedin.com/in/kevalsakhiya" target="_blank">Keval Sakhiya</a></li>
+                        <li class="icon solid fa-phone">+91 9687591750</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
