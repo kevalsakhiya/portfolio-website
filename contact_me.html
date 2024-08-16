@@ -13,14 +13,16 @@
     <style>
         .circle-container {
             display: flex;
-            flex-direction: row; /* Ensures horizontal alignment */
-            gap: 20px; /* Space between icons */
-            align-items: center; /* Aligns items vertically in the center */
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the icons horizontally */
         }
 
         .circle-icon {
-            width: 160px; /* Increased size */
-            height: 160px; /* Increased size */
+            width: 120px; /* Reduced size for better mobile view */
+            height: 120px;
             border-radius: 50%;
             overflow: hidden;
             background-color: #f4f4f4;
@@ -29,11 +31,12 @@
             justify-content: center;
             transition: transform 0.3s ease;
             text-decoration: none;
-            color: #0077B5; /* LinkedIn blue */
+            color: #0077B5;
+            margin: 10px; /* Added margin for better spacing on small screens */
         }
 
         .circle-icon i {
-            font-size: 3em; /* Larger icon size */
+            font-size: 2em; /* Adjusted icon size for responsiveness */
         }
 
         .circle-icon:hover {
@@ -44,6 +47,37 @@
             text-align: center;
             font-size: 14px;
             margin-top: 5px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .circle-container {
+                flex-direction: column; /* Stack icons vertically on small screens */
+            }
+
+            .circle-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .circle-icon i {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .circle-container {
+                gap: 10px; /* Reduce gap on very small screens */
+            }
+
+            .circle-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            .circle-icon i {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
